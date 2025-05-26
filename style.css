@@ -79,3 +79,89 @@ body {
   margin-top: 10px;
   color: #ddd;
 }
+/* ========== COMMON BACKGROUND FOR INNER PAGES ========== */
+.page {
+  background: url('back.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  color: white;
+}
+
+/* ========== PAGE NAVBAR (reuse hero navbar) ========== */
+.page .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent for readability */
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+/* ========== CONTENT CONTAINER ========== */
+.page-content {
+  max-width: 900px;
+  margin: 100px auto 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark box */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* ========== HEADINGS AND TEXT ========== */
+.page-content h1, 
+.page-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.page-content p, 
+.page-content li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.page-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* ========== LINK STYLING ========== */
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FORMS IN CONTACT PAGE ========== */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #00ffff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cccc;
+}
