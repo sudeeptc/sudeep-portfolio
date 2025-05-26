@@ -54,12 +54,12 @@
       content: "\1F4C4  ";
       font-size: 1.2rem;
     }
-    #about h2::before { content: "\1F464  "; }
-    #education h2::before { content: "\1F393  "; }
-    #certifications h2::before { content: "\1F4DA  "; }
-    #projects h2::before { content: "\1F4BB  "; }
-    #skills h2::before { content: "\1F9D1\200D\1F4BB  "; }
-    #contact h2::before { content: "\2709\FE0F  "; }
+    #About h2::before { content: "\1F464  "; }
+    #Education h2::before { content: "\1F393  "; }
+    #Certifications h2::before { content: "\1F4DA  "; }
+    #Projects h2::before { content: "\1F4BB  "; }
+    #Skills h2::before { content: "\1F9D1\200D\1F4BB  "; }
+    #Contact h2::before { content: "\2709\FE0F  "; }
     h2 {
       color: #2c3e50;
       margin-bottom: 1rem;
