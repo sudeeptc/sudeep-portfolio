@@ -5,6 +5,23 @@
   <title>Projects - Sudeep T C</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+function showNext(button) {
+  const gallery = button.closest('.project-card').querySelectorAll('.project-img');
+  let index = [...gallery].findIndex(img => img.classList.contains('active'));
+  gallery[index].classList.remove('active');
+  index = (index + 1) % gallery.length;
+  gallery[index].classList.add('active');
+}
+
+function showPrev(button) {
+  const gallery = button.closest('.project-card').querySelectorAll('.project-img');
+  let index = [...gallery].findIndex(img => img.classList.contains('active'));
+  gallery[index].classList.remove('active');
+  index = (index - 1 + gallery.length) % gallery.length;
+  gallery[index].classList.add('active');
+}
+</script>
 <body class="page">
   <nav class="navbar">
     <div class="logo">Sudeep</div>
