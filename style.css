@@ -1,106 +1,97 @@
-<style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-      background: linear-gradient(to right, #f0f4f8, #e2eafc);
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 1.5rem 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      padding: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00d1b2;
-    }
-    section {
-      padding: 3rem 2rem;
-      margin: 1.5rem auto;
-      width: 90%;
-      max-width: 960px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease-in-out;
-    }
-    section:hover {
-      transform: scale(1.01);
-    }
-    section h2::before {
-      content: "\1F4C4  ";
-      font-size: 1.2rem;
-    }
-    #About h2::before { content: "\1F464  "; }
-    #Education h2::before { content: "\1F393  "; }
-    #Certifications h2::before { content: "\1F4DA  "; }
-    #Projects h2::before { content: "\1F4BB  "; }
-    #Skills h2::before { content: "\1F9D1\200D\1F4BB  "; }
-    #Contact h2::before { content: "\2709\FE0F  "; }
-    h2 {
-      color: #2c3e50;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #2c3e50;
-      display: inline-block;
-    }
-    ul {
-      list-style: disc;
-      margin-left: 2rem;
-    }
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #2c3e50;
-      color: white;
-    }
-    .icon-links i {
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-      transition: color 0.3s;
-    }
-    .icon-links i:hover {
-      color: #00d1b2;
-    }
-    .button {
-      display: inline-block;
-      background: #00d1b2;
-      color: white;
-      padding: 0.5rem 1rem;
-      margin-top: 1rem;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background: #00b89c;
-    }
-  </style>
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef3f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #004aad;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 650px;
+  margin: 60px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+.contact-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Resume Download Button */
+.resume-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background-color: #004aad;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #003080;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 25px 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 10px;
+    font-size: 15px;
+  }
+}
